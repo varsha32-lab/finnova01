@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="FinNova Advisory – Smart Finance. Simplified. Investment planning, portfolio management, tax advisory and financial consulting for young investors and professionals." />
+  <title>FinNova Advisory | Smart Finance. Simplified.</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav id="navbar" class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo" aria-label="FinNova Advisory Home">
+        <span class="logo-icon"><i class="fas fa-chart-line"></i></span>
+        <span class="logo-text">Fin<span class="gold-accent">Nova</span></span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#blog" class="nav-link">Blog</a></li>
+        <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <a href="#contact" class="nav-cta btn-glow" id="navCtaBtn">Get Started</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========== HERO SECTION ========== -->
+  <section id="home" class="hero">
+    <!-- Animated gradient background orbs -->
+    <div class="hero-orb orb-1"></div>
+    <div class="hero-orb orb-2"></div>
+    <div class="hero-orb orb-3"></div>
+
+    <!-- Floating Finance Icons (Anti-Gravity) -->
+    <div class="floating-icon icon-rupee" data-depth="0.2" aria-hidden="true"><span>₹</span></div>
+    <div class="floating-icon icon-chart" data-depth="0.4" aria-hidden="true"><i class="fas fa-chart-bar"></i></div>
+    <div class="floating-icon icon-coin" data-depth="0.15" aria-hidden="true"><i class="fas fa-coins"></i></div>
+    <div class="floating-icon icon-trend" data-depth="0.35" aria-hidden="true"><i class="fas fa-chart-line"></i></div>
+    <div class="floating-icon icon-wallet" data-depth="0.25" aria-hidden="true"><i class="fas fa-wallet"></i></div>
+    <div class="floating-icon icon-percent" data-depth="0.3" aria-hidden="true"><span>%</span></div>
+    <div class="floating-icon icon-diamond" data-depth="0.18" aria-hidden="true"><i class="fas fa-gem"></i></div>
+    <div class="floating-icon icon-star" data-depth="0.45" aria-hidden="true"><i class="fas fa-star"></i></div>
+
+    <div class="hero-content">
+      <div class="hero-badge fade-in">🏦 SEBI Registered &nbsp;|&nbsp; 10,000+ Happy Investors</div>
+      <h1 class="hero-title fade-in">
+        Smart Finance.<br />
+        <span class="gradient-text">Simplified.</span>
+      </h1>
+      <p class="hero-subtitle fade-in">
+        Unlock your financial potential with expert investment strategies, portfolio management,
+        and personalised advisory tailored for the modern generation.
+      </p>
+      <div class="hero-cta fade-in">
+        <a href="#blog" class="btn btn-primary btn-glow" id="exploreBlogBtn">
+          <i class="fas fa-book-open"></i> Explore Blog
+        </a>
+        <a href="#contact" class="btn btn-secondary" id="consultationBtn">
+          <i class="fas fa-calendar-check"></i> Get Consultation
+        </a>
+      </div>
+      <div class="hero-stats fade-in">
+        <div class="stat-item">
+          <span class="stat-number" data-target="10000">0</span><span>+</span>
+          <span class="stat-label">Investors</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="500">0</span><span>Cr+</span>
+          <span class="stat-label">AUM</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="98">0</span><span>%</span>
+          <span class="stat-label">Satisfaction</span>
+        </div>
+      </div>
+      <!-- Trusted By Strip -->
+      <div class="trusted-strip fade-in">
+        <span class="trusted-label">Trusted &amp; Regulated By</span>
+        <div class="trusted-logos">
+          <div class="trust-badge"><i class="fas fa-university"></i><span>SEBI</span></div>
+          <div class="trust-divider"></div>
+          <div class="trust-badge"><i class="fas fa-shield-alt"></i><span>AMFI</span></div>
+          <div class="trust-divider"></div>
+          <div class="trust-badge"><i class="fas fa-landmark"></i><span>RBI</span></div>
+          <div class="trust-divider"></div>
+          <div class="trust-badge"><i class="fas fa-certificate"></i><span>ISO 27001</span></div>
+          <div class="trust-divider"></div>
+          <div class="trust-badge"><i class="fas fa-award"></i><span>NSE</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hero Graphic / Dashboard Preview -->
+    <div class="hero-graphic fade-in" id="heroGraphic">
+      <div class="dashboard-card glass-card" data-depth="0.08">
+        <div class="dash-header">
+          <span><i class="fas fa-chart-pie"></i> Portfolio Overview</span>
+          <span class="dash-badge">LIVE</span>
+        </div>
+        <div class="dash-chart">
+          <div class="chart-bar bar-1">
+            <div class="bar-fill" style="--h:75%"><span>Equity</span></div>
+          </div>
+          <div class="chart-bar bar-2">
+            <div class="bar-fill" style="--h:55%"><span>Debt</span></div>
+          </div>
+          <div class="chart-bar bar-3">
+            <div class="bar-fill bar-gold" style="--h:88%"><span>SIP</span></div>
+          </div>
+          <div class="chart-bar bar-4">
+            <div class="bar-fill bar-purple" style="--h:40%"><span>FD</span></div>
+          </div>
+        </div>
+        <div class="dash-footer">
+          <span class="dash-gain"><i class="fas fa-arrow-up"></i> +18.4% YTD</span>
+          <span class="dash-value">₹24.8L</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <a href="#about" class="scroll-indicator" aria-label="Scroll to about section">
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+      <span>Scroll down</span>
+    </a>
+  </section>
+
+  <!-- ========== ABOUT SECTION ========== -->
+  <section id="about" class="about section">
+    <div class="container">
+      <div class="section-badge fade-in-up">About Us</div>
+      <h2 class="section-title fade-in-up">Who is <span class="gradient-text">FinNova?</span></h2>
+      <div class="about-grid">
+        <div class="about-text fade-in-up">
+          <p class="about-description">
+            FinNova Advisory was founded with a single mission — to demystify personal finance for
+            India's next generation of wealth builders. We blend cutting-edge data analytics with
+            human-first advisory to deliver financial clarity you can act on.
+          </p>
+          <div class="about-cards">
+            <!-- Mission Card -->
+            <div class="about-mini-card glass-card fade-in-up" id="missionCard">
+              <div class="mini-card-icon"><i class="fas fa-rocket"></i></div>
+              <div>
+                <h4>Our Mission</h4>
+                <p>Make sophisticated financial strategies accessible to every ambitious Indian.</p>
+              </div>
+            </div>
+            <!-- Vision Card -->
+            <div class="about-mini-card glass-card fade-in-up" id="visionCard">
+              <div class="mini-card-icon vision-icon"><i class="fas fa-eye"></i></div>
+              <div>
+                <h4>Our Vision</h4>
+                <p>A financially literate India where every professional achieves freedom by 45.</p>
+              </div>
+            </div>
+          </div>
+          <div class="about-tags">
+            <span class="tag"><i class="fas fa-check-circle"></i> SEBI Registered</span>
+            <span class="tag"><i class="fas fa-check-circle"></i> Award Winning</span>
+            <span class="tag"><i class="fas fa-check-circle"></i> 10+ Years Expertise</span>
+          </div>
+        </div>
+        <div class="about-visual fade-in-up">
+          <div class="about-image-wrapper">
+            <div class="image-glow"></div>
+            <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786?w=720&q=85&auto=format&fit=crop"
+              alt="FinNova Advisory senior financial advisors in a professional boardroom meeting" class="about-photo"
+              loading="lazy" />
+            <div class="about-stats-overlay glass-card">
+              <div class="overlay-stat">
+                <i class="fas fa-users"></i>
+                <div>
+                  <strong>10,000+</strong>
+                  <span>Happy Clients</span>
+                </div>
+              </div>
+              <div class="overlay-stat">
+                <i class="fas fa-award"></i>
+                <div>
+                  <strong>50+</strong>
+                  <span>Awards Won</span>
+                </div>
+              </div>
+              <div class="overlay-stat">
+                <i class="fas fa-city"></i>
+                <div>
+                  <strong>20+</strong>
+                  <span>Cities Served</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SERVICES SECTION ========== -->
+  <section id="services" class="services section">
+    <div class="container">
+      <div class="section-badge fade-in-up">What We Offer</div>
+      <h2 class="section-title fade-in-up">Our <span class="gradient-text">Services</span></h2>
+      <p class="section-subtitle fade-in-up">
+        Comprehensive financial solutions designed to help you grow, protect, and manage your wealth.
+      </p>
+      <div class="services-grid">
+
+        <!-- Service Card 1 -->
+        <div class="service-card glass-card fade-in-up" id="serviceCard1" tabindex="0">
+          <div class="service-illustration">
+            <img src="https://images.unsplash.com/photo-1591696205602-2f950c417cb9?w=600&q=80&auto=format&fit=crop"
+              alt="Investment planning and wealth growth charts" loading="lazy" />
+          </div>
+          <div class="service-icon-wrap icon-blue">
+            <i class="fas fa-seedling"></i>
+          </div>
+          <h3>Investment Planning</h3>
+          <p>Goal-based investment strategies — from SIPs to stocks — tailored to your risk appetite and timeline.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check"></i> Goal Mapping</li>
+            <li><i class="fas fa-check"></i> Risk Profiling</li>
+            <li><i class="fas fa-check"></i> Mutual Fund Advisory</li>
+          </ul>
+          <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <!-- Service Card 2 -->
+        <div class="service-card glass-card fade-in-up" id="serviceCard2" tabindex="0">
+          <div class="service-illustration">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&q=80&auto=format&fit=crop"
+              alt="Portfolio management and financial data analysis" loading="lazy" />
+          </div>
+          <div class="service-icon-wrap icon-purple">
+            <i class="fas fa-briefcase"></i>
+          </div>
+          <h3>Portfolio Management</h3>
+          <p>Active and passive portfolio strategies managed by SEBI-registered professionals to maximise returns.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check"></i> Asset Allocation</li>
+            <li><i class="fas fa-check"></i> Rebalancing</li>
+            <li><i class="fas fa-check"></i> Performance Reports</li>
+          </ul>
+          <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <!-- Service Card 3 -->
+        <div class="service-card glass-card fade-in-up" id="serviceCard3" tabindex="0">
+          <div class="service-illustration">
+            <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=600&q=80&auto=format&fit=crop"
+              alt="Tax advisory and financial planning documents" loading="lazy" />
+          </div>
+          <div class="service-icon-wrap icon-green">
+            <i class="fas fa-file-invoice-dollar"></i>
+          </div>
+          <h3>Tax Advisory</h3>
+          <p>Smart tax planning strategies to help you legally minimise liability and maximise post-tax wealth.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check"></i> ITR Filing</li>
+            <li><i class="fas fa-check"></i> Tax-Loss Harvesting</li>
+            <li><i class="fas fa-check"></i> Capital Gains Planning</li>
+          </ul>
+          <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <!-- Service Card 4 -->
+        <div class="service-card glass-card fade-in-up" id="serviceCard4" tabindex="0">
+          <div class="service-illustration">
+            <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?w=600&q=80&auto=format&fit=crop"
+              alt="Financial consulting and advisory meeting" loading="lazy" />
+          </div>
+          <div class="service-icon-wrap icon-gold">
+            <i class="fas fa-comments-dollar"></i>
+          </div>
+          <h3>Financial Consulting</h3>
+          <p>One-on-one consultations for life events — salary negotiation, marriage planning, FIRE planning, and more.
+          </p>
+          <ul class="service-features">
+            <li><i class="fas fa-check"></i> 1:1 Advisory</li>
+            <li><i class="fas fa-check"></i> Life Event Planning</li>
+            <li><i class="fas fa-check"></i> FIRE Strategy</li>
+          </ul>
+          <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== HOW IT WORKS SECTION ========== -->
+  <section id="process" class="process section">
+    <div class="container">
+      <div class="section-badge fade-in-up">Our Approach</div>
+      <h2 class="section-title fade-in-up">How <span class="gradient-text">FinNova Works</span></h2>
+      <p class="section-subtitle fade-in-up">From your first consultation to long-term wealth creation — a clear, guided
+        journey.</p>
+      <div class="process-grid">
+
+        <div class="process-step fade-in-up">
+          <div class="process-img-wrap">
+            <img src="https://images.unsplash.com/photo-1551836022-deb4988cc6c0?w=420&q=75&auto=format&fit=crop"
+              alt="Free consultation call with a financial advisor" loading="lazy" class="process-img" />
+            <div class="process-step-num">01</div>
+          </div>
+          <div class="process-step-icon"><i class="fas fa-phone-alt"></i></div>
+          <h3>Free Consultation</h3>
+          <p>Book a 30-minute no-obligation call with a certified advisor to discuss your financial goals and situation.
+          </p>
+        </div>
+
+        <div class="process-connector fade-in-up" aria-hidden="true"><i class="fas fa-arrow-right"></i></div>
+
+        <div class="process-step fade-in-up">
+          <div class="process-img-wrap">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=420&q=75&auto=format&fit=crop"
+              alt="Personalised financial plan creation" loading="lazy" class="process-img" />
+            <div class="process-step-num">02</div>
+          </div>
+          <div class="process-step-icon" style="background:rgba(168,85,247,0.2);border-color:rgba(168,85,247,0.4);"><i
+              class="fas fa-file-alt" style="color:#a855f7"></i></div>
+          <h3>Personalised Plan</h3>
+          <p>We craft a bespoke financial roadmap covering investments, tax optimisation, and wealth milestones.</p>
+        </div>
+
+        <div class="process-connector fade-in-up" aria-hidden="true"><i class="fas fa-arrow-right"></i></div>
+
+        <div class="process-step fade-in-up">
+          <div class="process-img-wrap">
+            <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=420&q=75&auto=format&fit=crop"
+              alt="Portfolio execution and tracking" loading="lazy" class="process-img" />
+            <div class="process-step-num">03</div>
+          </div>
+          <div class="process-step-icon" style="background:rgba(16,185,129,0.2);border-color:rgba(16,185,129,0.4);"><i
+              class="fas fa-rocket" style="color:#10b981"></i></div>
+          <h3>Execute & Track</h3>
+          <p>We implement your plan and provide live portfolio tracking, quarterly reviews, and proactive rebalancing.
+          </p>
+        </div>
+
+        <div class="process-connector fade-in-up" aria-hidden="true"><i class="fas fa-arrow-right"></i></div>
+
+        <div class="process-step fade-in-up">
+          <div class="process-img-wrap">
+            <img src="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=420&q=75&auto=format&fit=crop"
+              alt="Achieving financial freedom and wealth" loading="lazy" class="process-img" />
+            <div class="process-step-num">04</div>
+          </div>
+          <div class="process-step-icon" style="background:rgba(245,158,11,0.2);border-color:rgba(245,158,11,0.4);"><i
+              class="fas fa-trophy" style="color:#f59e0b"></i></div>
+          <h3>Achieve Freedom</h3>
+          <p>Watch your wealth grow with expert guidance. Retire early, plan life events, and achieve financial
+            independence.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== BLOG SECTION ========== -->
+  <section id="blog" class="blog section">
+    <div class="container">
+      <div class="section-badge fade-in-up">Latest Reads</div>
+      <h2 class="section-title fade-in-up">From Our <span class="gradient-text">Blog</span></h2>
+      <p class="section-subtitle fade-in-up">Insights, tips, and deep-dives into the world of personal finance.</p>
+      <div class="blog-grid">
+
+        <!-- Blog Card 1 -->
+        <article class="blog-card glass-card fade-in-up" id="blogCard1">
+          <div class="blog-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=640&q=85&auto=format&fit=crop"
+              alt="Professional stock market trader analysing investment charts" class="blog-photo" loading="lazy" />
+            <span class="blog-category">Investing</span>
+          </div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span><i class="fas fa-calendar"></i> Feb 20, 2026</span>
+              <span><i class="fas fa-clock"></i> 5 min read</span>
+            </div>
+            <h3>SIP vs Lump Sum: Which Investment Strategy Wins in 2026?</h3>
+            <p>A data-driven breakdown of how systematic investment plans compare to one-time lump sum investing across
+              different market cycles.</p>
+            <a href="#" class="blog-link btn-glow" aria-label="Read more about SIP vs Lump Sum">Read More <i
+                class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <!-- Blog Card 2 -->
+        <article class="blog-card glass-card fade-in-up featured-blog" id="blogCard2">
+          <div class="blog-featured-badge">⭐ Featured</div>
+          <div class="blog-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=640&q=85&auto=format&fit=crop"
+              alt="Professional tax advisor reviewing financial documents with client" class="blog-photo"
+              loading="lazy" />
+            <span class="blog-category">Tax Planning</span>
+          </div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span><i class="fas fa-calendar"></i> Feb 14, 2026</span>
+              <span><i class="fas fa-clock"></i> 8 min read</span>
+            </div>
+            <h3>New Tax Regime 2026: Should You Switch? A Complete Guide</h3>
+            <p>Everything you need to know about the new income tax regime and whether making the switch actually saves
+              you money this fiscal year.</p>
+            <a href="#" class="blog-link btn-glow" aria-label="Read more about New Tax Regime 2026">Read More <i
+                class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <!-- Blog Card 3 -->
+        <article class="blog-card glass-card fade-in-up" id="blogCard3">
+          <div class="blog-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1534951009808-766178b47a4f?w=640&q=85&auto=format&fit=crop"
+              alt="Successful professional achieving financial independence and freedom" class="blog-photo"
+              loading="lazy" />
+            <span class="blog-category">FIRE</span>
+          </div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span><i class="fas fa-calendar"></i> Feb 5, 2026</span>
+              <span><i class="fas fa-clock"></i> 6 min read</span>
+            </div>
+            <h3>The FIRE Movement for Indians: Retire Early on a ₹15L Salary</h3>
+            <p>A realistic roadmap to financial independence and early retirement designed for the Indian income bracket
+              and lifestyle.</p>
+            <a href="#" class="blog-link btn-glow" aria-label="Read more about FIRE Movement for Indians">Read More <i
+                class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+      </div>
+      <div class="blog-cta fade-in-up">
+        <a href="#" class="btn btn-primary btn-glow" id="allArticlesBtn">View All Articles <i
+            class="fas fa-external-link-alt"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TESTIMONIALS SECTION ========== -->
+  <section id="testimonials" class="testimonials section">
+    <!-- Decorative background elements -->
+    <div class="test-orb test-orb-1"></div>
+    <div class="test-orb test-orb-2"></div>
+    <div class="container">
+      <div class="section-badge fade-in-up">Client Stories</div>
+      <h2 class="section-title fade-in-up">What Our <span class="gradient-text">Clients Say</span></h2>
+      <div class="testimonial-slider-wrapper fade-in-up">
+        <div class="testimonial-slider" id="testimonialSlider" role="list">
+
+          <!-- Testimonial 1 -->
+          <div class="testimonial-slide" role="listitem">
+            <div class="testimonial-card glass-card">
+              <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+              <p class="testimonial-text">FinNova completely changed how I look at money. My SIP portfolio grew 22% last
+                year and I finally understand where my salary is actually going!</p>
+              <div class="testimonial-rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                  class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+              <div class="testimonial-author">
+                <div class="author-avatar avatar-1">
+                  <span>RK</span>
+                </div>
+                <div class="author-info">
+                  <strong>Rohan Kapoor</strong>
+                  <span>Software Engineer, Bangalore</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="testimonial-slide" role="listitem">
+            <div class="testimonial-card glass-card">
+              <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+              <p class="testimonial-text">As an MBA student, I was intimidated by investing. FinNova's blog and
+                consultation service made it so simple. I started my first SIP at ₹2000/month!</p>
+              <div class="testimonial-rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                  class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+              <div class="testimonial-author">
+                <div class="author-avatar avatar-2">
+                  <span>PM</span>
+                </div>
+                <div class="author-info">
+                  <strong>Priya Mehta</strong>
+                  <span>MBA Student, IIM Ahmedabad</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="testimonial-slide" role="listitem">
+            <div class="testimonial-card glass-card">
+              <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+              <p class="testimonial-text">Their tax advisory saved me ₹1.2L in taxes last year. The team is genuinely
+                knowledgeable, friendly, and always available. Highly recommended!</p>
+              <div class="testimonial-rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                  class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+              </div>
+              <div class="testimonial-author">
+                <div class="author-avatar avatar-3">
+                  <span>AS</span>
+                </div>
+                <div class="author-info">
+                  <strong>Arjun Sharma</strong>
+                  <span>Product Manager, Mumbai</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 4 -->
+          <div class="testimonial-slide" role="listitem">
+            <div class="testimonial-card glass-card">
+              <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+              <p class="testimonial-text">I used to think FIRE was impossible on my salary. FinNova built me a
+                step-by-step retirement plan. I'm now on track to be debt-free by 38!</p>
+              <div class="testimonial-rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                  class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+              <div class="testimonial-author">
+                <div class="author-avatar avatar-4">
+                  <span>NJ</span>
+                </div>
+                <div class="author-info">
+                  <strong>Nisha Joshi</strong>
+                  <span>UX Designer, Pune</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- Slider Controls -->
+        <div class="slider-controls">
+          <button class="slider-btn prev-btn" id="prevBtn" aria-label="Previous testimonial"><i
+              class="fas fa-chevron-left"></i></button>
+          <div class="slider-dots" id="sliderDots" role="tablist" aria-label="Testimonial navigation"></div>
+          <button class="slider-btn next-btn" id="nextBtn" aria-label="Next testimonial"><i
+              class="fas fa-chevron-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT SECTION ========== -->
+  <section id="contact" class="contact section">
+    <div class="container">
+      <div class="section-badge fade-in-up">Reach Out</div>
+      <h2 class="section-title fade-in-up">Let's Talk <span class="gradient-text">Finance</span></h2>
+      <p class="section-subtitle fade-in-up">Get your free 30-minute consultation. No strings attached.</p>
+
+      <div class="contact-grid">
+        <!-- Contact Info -->
+        <div class="contact-info fade-in-up">
+          <div class="contact-info-card glass-card">
+            <h3>Get in Touch</h3>
+            <div class="contact-detail">
+              <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div>
+                <strong>Visit Us</strong>
+                <p>12th Floor, One BKC, Bandra Kurla Complex, Mumbai – 400051</p>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+              <div>
+                <strong>Call Us</strong>
+                <p>+91 98765 43210</p>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <strong>Email Us</strong>
+                <p>hello@finnovaadvisory.in</p>
+              </div>
+            </div>
+            <div class="contact-social">
+              <a href="#" class="social-icon-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" class="social-icon-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="social-icon-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="social-icon-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-wrapper fade-in-up">
+          <form class="contact-form glass-card" id="contactForm" novalidate>
+            <h3>Book Free Consultation</h3>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <div class="input-wrapper">
+                  <i class="fas fa-user"></i>
+                  <input type="text" id="name" name="name" placeholder="Rohan Kapoor" autocomplete="name" />
+                </div>
+                <span class="form-error" id="nameError" role="alert"></span>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <div class="input-wrapper">
+                  <i class="fas fa-envelope"></i>
+                  <input type="email" id="email" name="email" placeholder="rohan@example.com" autocomplete="email" />
+                </div>
+                <span class="form-error" id="emailError" role="alert"></span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number <span class="optional">(optional)</span></label>
+              <div class="input-wrapper">
+                <i class="fas fa-phone"></i>
+                <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210" autocomplete="tel" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="service">Service Interested In</label>
+              <div class="input-wrapper select-wrapper">
+                <i class="fas fa-list-ul"></i>
+                <select id="service" name="service">
+                  <option value="">Select a Service…</option>
+                  <option value="investment">Investment Planning</option>
+                  <option value="portfolio">Portfolio Management</option>
+                  <option value="tax">Tax Advisory</option>
+                  <option value="consulting">Financial Consulting</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="message">Your Message</label>
+              <div class="input-wrapper textarea-wrapper">
+                <i class="fas fa-comment-dots"></i>
+                <textarea id="message" name="message" rows="4"
+                  placeholder="Tell us about your financial goals…"></textarea>
+              </div>
+              <span class="form-error" id="messageError" role="alert"></span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-glow btn-full" id="submitBtn">
+              <span class="btn-text"><i class="fas fa-paper-plane"></i> Send Message</span>
+              <span class="btn-loading" style="display:none;"><i class="fas fa-spinner fa-spin"></i> Sending…</span>
+            </button>
+            <div class="form-success" id="formSuccess" style="display:none;" role="status">
+              <i class="fas fa-check-circle"></i>
+              <strong>Message Sent!</strong>
+              <p>We'll get back to you within 24 hours. 🎉</p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="footer-glow"></div>
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand -->
+        <div class="footer-brand">
+          <a href="#home" class="nav-logo footer-logo">
+            <span class="logo-icon"><i class="fas fa-chart-line"></i></span>
+            <span class="logo-text">Fin<span class="accent">Nova</span></span>
+          </a>
+          <p>Smart Finance. Simplified. Empowering India's next generation of wealth creators with expert advisory and
+            financial literacy.</p>
+          <div class="footer-social">
+            <a href="#" class="social-icon-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-icon-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="social-icon-link" aria-label="Telegram"><i class="fab fa-telegram-plane"></i></a>
+          </div>
+        </div>
+        <!-- Quick Links -->
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <!-- Services -->
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#services">Investment Planning</a></li>
+            <li><a href="#services">Portfolio Management</a></li>
+            <li><a href="#services">Tax Advisory</a></li>
+            <li><a href="#services">Financial Consulting</a></li>
+            <li><a href="#">FIRE Planning</a></li>
+          </ul>
+        </div>
+        <!-- Newsletter -->
+        <div class="footer-col footer-newsletter">
+          <h4>Weekly Newsletter</h4>
+          <p>Get curated finance tips every Sunday. Join 8,000+ subscribers.</p>
+          <form class="newsletter-form" id="newsletterForm">
+            <div class="newsletter-input-wrap">
+              <input type="email" id="newsletterEmail" placeholder="your@email.com" aria-label="Newsletter email" />
+              <button type="submit" class="btn-glow" id="newsletterSubmit" aria-label="Subscribe to newsletter">
+                <i class="fas fa-paper-plane"></i>
+              </button>
+            </div>
+          </form>
+          <p class="footer-disclaimer">SEBI Registered Investment Adviser | Reg. No. INA000XXXXX</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 FinNova Advisory Pvt. Ltd. All Rights Reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Disclaimer</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="backToTop" class="back-to-top btn-glow" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
