@@ -801,9 +801,69 @@ function toggleChatbot() {
   }
 }
 </script>
+<script src="script.js"></script>
+
+<!-- Small Chat Icon -->
+<button onclick="toggleChatbot()" id="chatBtn"
+style="
+position:fixed;
+bottom:20px;
+right:20px;
+width:55px;
+height:55px;
+border:none;
+border-radius:50%;
+background:#007bff;
+color:white;
+font-size:24px;
+cursor:pointer;
+z-index:9999;
+box-shadow:0 4px 12px rgba(0,0,0,0.2);">
+💬
+</button>
+
+<!-- Hidden Chatbot -->
+<div id="chatbotBox"
+style="
+display:none;
+position:fixed;
+bottom:85px;
+right:20px;
+width:360px;
+height:500px;
+background:white;
+border-radius:15px;
+overflow:hidden;
+z-index:9999;
+box-shadow:0 6px 20px rgba(0,0,0,0.25);">
+
+<iframe
+src="https://www.chatbase.co/chatbot-iframe/hHoYSWCUIFgwbMy2fK29X"
+width="100%"
+height="100%"
+style="border:none;"
+frameborder="0">
+</iframe>
+
+</div>
+
+<script>
+function toggleChatbot() {
+  let box = document.getElementById("chatbotBox");
+  if (box.style.display === "none" || box.style.display === "") {
+    box.style.display = "block";
+  } else {
+    box.style.display = "none";
+  }
+}
+</script>
 
 </body>
 </html>
+
+
+
+
 
 
 
