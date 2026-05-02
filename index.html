@@ -769,8 +769,42 @@
 
 </body>
 </html>
+<script src="script.js"></script>
+
+<!-- Chatbot Popup Button -->
+<button onclick="toggleChatbot()" 
+style="position:fixed; bottom:20px; right:20px; width:65px; height:65px; border:none; border-radius:50%; background:#007bff; color:white; font-size:28px; cursor:pointer; z-index:9999; box-shadow:0 0 15px rgba(0,0,0,0.2);">
+💬
+</button>
+
+<!-- Chatbot Popup Box -->
+<div id="chatbotBox" 
+style="display:none; position:fixed; bottom:95px; right:20px; width:380px; height:600px; background:white; border-radius:15px; overflow:hidden; z-index:9999; box-shadow:0 0 20px rgba(0,0,0,0.25);">
+
+<iframe
+src="https://www.chatbase.co/chatbot-iframe/hHoYSWCUIFgwbMy2fK29X"
+width="100%"
+height="100%"
+style="border:none;"
+frameborder="0">
+</iframe>
+
+</div>
+
+<script>
+function toggleChatbot() {
+  var box = document.getElementById("chatbotBox");
+  if (box.style.display === "none") {
+    box.style.display = "block";
+  } else {
+    box.style.display = "none";
+  }
+}
+</script>
 
 </body>
-
 </html>
+
+
+
 
